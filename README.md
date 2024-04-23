@@ -25,7 +25,7 @@ Dashboard address: http://localhost:1880/dashboard / http://RPI_IP:1880/dashboar
 
 ## Raspberry PI 5 installation steps
 
-´´´
+```
 sudo apt update && sudo apt upgrade
-´´´
+```
 
