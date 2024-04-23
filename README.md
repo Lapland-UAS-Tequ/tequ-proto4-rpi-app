@@ -3,7 +3,7 @@
 
 Editor address: http://localhost:1880 / http://RPI_IP:1880
 
-Dashboard address: http://http://localhost:1880/dashboard / http://RPI_IP:1880/dashboard 
+Dashboard address: http://localhost:1880/dashboard / http://RPI_IP:1880/dashboard 
 
 ## Hardware components
 
