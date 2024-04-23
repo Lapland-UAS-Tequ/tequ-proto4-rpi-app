@@ -1,9 +1,9 @@
 # tequ-proto4-rpi-app
  Raspberry PI 5application to read and process data from Xsens acceleration&GNSS sensor unit.
 
-Editor address: http://localhost:1880
+Editor address: http://localhost:1880 / http://RPI_IP:1880
 
-Dashboard address: http://http://localhost:1880/dashboard
+Dashboard address: http://http://localhost:1880/dashboard / http://RPI_IP:1880/dashboard 
 
 ## Hardware components
 
