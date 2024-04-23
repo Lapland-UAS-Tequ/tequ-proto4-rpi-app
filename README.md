@@ -18,3 +18,14 @@ Dashboard address: http://localhost:1880/dashboard / http://RPI_IP:1880/dashboar
 | XSens USB cable |  CA-USB-MTI | [link](https://shop.movella.com/product-lines/sensor-modules/accessories/ca-usb-mti)|
 | USB-C car power supply | 40AK0065WW  | [link](https://www.dustin.fi/product/5011112082/65w-usb-c-dc-travel-adapter)|
 
+## Preparation of components
+
+1. Build and connect NVMe base https://learn.pimoroni.com/article/getting-started-with-nvme-base
+2. Build and connect 4G/LTE base HAT https://docs.sixfab.com/docs/getting-started-with-base-hat-and-quectel-ec25-eg25-module
+
+## Raspberry PI 5 installation steps
+
+´´´
+sudo apt update && sudo apt upgrade
+´´´
+
