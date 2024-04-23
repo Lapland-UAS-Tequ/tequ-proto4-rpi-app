@@ -1,7 +1,9 @@
 # tequ-proto4-rpi-app
- Raspberry PI 5 application to read and process data from Xsens acceleration&GNSS sensor unit. Data is streamed to Web dashboard (proto.tequ.fi) via Websocket. 
-
- Local logging can be enabled from Local UI. Data is sent to Tequ MQTT broker. Logging and data sending is only done if GNSS status is valid.
+ Raspberry PI 5 application to read and process data from Xsens acceleration&GNSS sensor unit. 
+ - Data is streamed to Web dashboard (proto.tequ.fi) via Websocket
+ - Local logging can be enabled from Local UI
+ - Data is sent to Tequ MQTT broker
+ - Logging and data sending is only done if GNSS status is valid
 
 Editor address: http://localhost:1880 / http://RPI_IP:1880
 
