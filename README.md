@@ -5,9 +5,13 @@
  - Data is sent to Tequ MQTT broker
  - Logging and data sending is only done if GNSS status is valid
 
-Editor address: http://localhost:1880 / http://RPI_IP:1880
+Node-RED editor address
 
-Dashboard address: http://localhost:1880/dashboard / http://RPI_IP:1880/dashboard 
+- http://localhost:1880 / http://RPI_IP:1880
+
+Node-RED dashboard address:
+
+- http://localhost:1880/dashboard / http://RPI_IP:1880/dashboard 
 
 ## Hardware components
 
