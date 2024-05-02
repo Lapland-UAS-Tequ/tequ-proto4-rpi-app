@@ -81,7 +81,15 @@ Add following line to file:
 SUBSYSTEM=="tty", ATTRS{idProduct}=="d00d", ATTRS{idVendor}=="2639", SYMLINK+="ttyUSB_XSENS"
 ```
 
+## Configure wifi access point settings-file
 
+```
+sudo nano /home/pi/.node-red/wifi-settings.json
+```
+
+```
+{"ssid":"your_ssid","password":"your_password!"}
+```
 
 
 ## Raspberry PI 5 software installation steps
