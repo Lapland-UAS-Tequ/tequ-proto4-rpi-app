@@ -36,6 +36,43 @@ Node-RED dashboard address:
    
    https://docs.sixfab.com/docs/getting-started-with-base-hat-and-quectel-ec25-eg25-module
 
+## Configure 4G module
+
+Detailed instructions:
+
+https://docs.sixfab.com/page/cellular-internet-connection-in-ecm-mode
+
+Short instructions:
+
+Remove modemmanager
+
+```
+sudo apt purge modemmanager -y
+```
+
+Find out modem serial port (send AT command using 115200 8N1) to USB-ports)
+
+Send following commands to modem serial port
+
+Configure APN
+```
+AT+CGDCONT=1,"IPV4V6","internet"
+```
+
+Configure USBnet mode
+```
+AT+QCFG="usbnet",1
+```
+
+Reboot module (might not needed)
+```
+AT+CFUN=1,1
+```
+
+## Map Movella sensor to specific USB-port
+
+
+
 ## Raspberry PI 5 software installation steps
 
 ```
