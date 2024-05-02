@@ -50,9 +50,9 @@ Remove modemmanager
 sudo apt purge modemmanager -y
 ```
 
-Find out modem serial port (send AT command using 115200 8N1) to USB-ports)
+Find out modem serial port (send AT command using default serial settings 115200 8N1 to USB-ports)
 
-Send following commands to modem serial port
+Use terminal program or Node-RED or any other way to configure 4G-module with following commands
 
 Configure APN
 ```
