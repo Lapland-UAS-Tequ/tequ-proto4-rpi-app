@@ -71,6 +71,17 @@ AT+CFUN=1,1
 
 ## Map Movella sensor to specific USB-port
 
+Create and edit file
+```
+sudo nano /etc/udev/rules.d/10-usb-serial.rules
+```
+
+Add following line to file:
+```
+SUBSYSTEM=="tty", ATTRS{idProduct}=="d00d", ATTRS{idVendor}=="2639", SYMLINK+="ttyUSB_XSENS"
+```
+
+
 
 
 ## Raspberry PI 5 software installation steps
