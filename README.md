@@ -1,9 +1,11 @@
 # tequ-proto4-rpi-app
- Raspberry PI 5 application to read and process data from Xsens acceleration&GNSS sensor unit. 
+ Raspberry PI application to read and process data from Xsens acceleration&GNSS sensor unit. 
  - Data is streamed to Web dashboard (proto.tequ.fi) via Websocket
  - Logging to file can be enabled from UI
  - Data send to Tequ MQTT broker can be enabled from UI
  - Logging and data sending is only done if GNSS status is valid
+
+Tested using Raspberry PI 5 8 GB. Software and components should be compatible with other Raspberry PI boards.
 
 Node-RED editor address
 
@@ -30,17 +32,17 @@ Node-RED dashboard address:
 
 1. Build and connect NVMe base
    
-   https://learn.pimoroni.com/article/getting-started-with-nvme-base
+   - https://learn.pimoroni.com/article/getting-started-with-nvme-base
 
 2. Build and connect 4G/LTE base HAT
    
-   https://docs.sixfab.com/docs/getting-started-with-base-hat-and-quectel-ec25-eg25-module
+   - https://docs.sixfab.com/docs/getting-started-with-base-hat-and-quectel-ec25-eg25-module
 
 ## Configure 4G module
 
 Detailed instructions:
 
-https://docs.sixfab.com/page/cellular-internet-connection-in-ecm-mode
+- https://docs.sixfab.com/page/cellular-internet-connection-in-ecm-mode
 
 Short instructions:
 
@@ -69,7 +71,15 @@ Reboot module (might not needed)
 AT+CFUN=1,1
 ```
 
-## Map Movella sensor to specific USB-port
+## Configure Movella Xsens sensor
+
+- Download and install MT Software Suite https://www.movella.com/support/software-documentation
+- Connect sensor with USB-cable
+- Configure serial mode and baudrate 2000000
+- Enable NMEA sentences PSONCMS and GPRMC
+
+
+## Map Movella Xsens sensor to specific USB-port when connected to Raspberry PI
 
 Create and edit file
 ```
@@ -92,7 +102,7 @@ sudo nano /home/pi/.node-red/wifi-settings.json
 ```
 
 
-## Raspberry PI 5 software installation steps
+## Raspberry PI software installation steps
 
 ```
 sudo apt update && sudo apt upgrade
