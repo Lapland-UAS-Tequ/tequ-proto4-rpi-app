@@ -1,11 +1,11 @@
 # tequ-proto4-rpi-app
- Raspberry PI application to read and process data from Xsens acceleration&GNSS sensor unit. 
+ Raspberry PI application to read and process data from Movella Xsens acceleration&GNSS sensor unit. 
  - Data is streamed to Web dashboard (proto.tequ.fi) via Websocket
  - Logging to file can be enabled from UI
- - Data send to Tequ MQTT broker can be enabled from UI
+ - Data send to external MQTT broker can be enabled from UI
  - Logging and data sending is only done if GNSS status is valid
 
-Tested using Raspberry PI 5 8 GB. Software and components should be compatible with other Raspberry PI boards.
+This repository is developed and tested using Raspberry PI 5 8 GB. Software and components should be compatible with older Raspberry PI boards, but not tested.
 
 Node-RED editor address
 
@@ -74,12 +74,11 @@ AT+CFUN=1,1
 ## Configure Movella Xsens sensor
 
 - Download and install MT Software Suite https://www.movella.com/support/software-documentation
-- Connect sensor with USB-cable
-- Configure serial mode and baudrate 2000000
+- Connect sensor with USB cable
+- Configure serial mode and baudrate to 2000000
 - Enable NMEA sentences PSONCMS and GPRMC
 
-
-## Map Movella Xsens sensor to specific USB-port when connected to Raspberry PI
+## Map Movella Xsens sensor to specific USB port when connected to Raspberry PI
 
 Create and edit file
 ```
@@ -132,4 +131,4 @@ npm install node-red-node-serialport &&
 ## Install Node-RED flows
 1. Copy flows.json from this repository to your node-red folder
 2. Restart Node-RED
-3. Configure MQTT node credentials (user: proto4)
+3. Configure MQTT node credentials
