@@ -21,7 +21,7 @@ Node-RED dashboard address:
 | -------------             |:-------------:| :-------------:|
 | Rasbperry PI5    | PI5-8GB    | [link](https://www.raspberrypi.com/products/raspberry-pi-5/)|
 | Pimoroni NVMe base         | PIM699  | [link](https://shop.pimoroni.com/products/nvme-base)|
-| NVMe memory    | SKC3000S/512G  | [link](https://www.dustin.fi/product/5011261755/kc3000)|
+| Kingston NVMe memory    | SKC3000S/512G  | [link](https://www.dustin.fi/product/5011261755/kc3000)|
 | Sixfab 4G/LTE base HAT     | S121 | [link](https://sixfab.com/product/raspberry-pi-base-hat-3g-4g-lte-minipcie-cards/)|
 | Quectel 4G module    | S60  | [link](https://sixfab.com/product/quectel-ec25-mini-pcie-4g-lte-module/)|
 | Movella XSens sensor    | MTi-G-710 GNSS/INS | [link](https://www.movella.com/products/sensor-modules/xsens-mti-g-710-gnss-ins)|
