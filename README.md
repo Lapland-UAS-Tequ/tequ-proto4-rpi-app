@@ -4,6 +4,8 @@
  - Logging to file can be enabled from UI
  - Data send to external MQTT broker can be enabled from UI
  - Logging and data sending is only done if GNSS status is valid
+ - Data logging and plotting rate is configurable
+ - Logging is enabled using "Logging"-button
 
 This repository is developed and tested using Raspberry PI 5 8 GB. Software and components should be compatible with older Raspberry PI boards, but not tested.
 
