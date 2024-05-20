@@ -1,5 +1,5 @@
 # tequ-proto4-rpi-app
- Raspberry PI application to read and process data from Movella Xsens acceleration&GNSS sensor unit. 
+ Node-RED application to read and process data from Movella Xsens acceleration&GNSS sensor unit. 
  - Data is streamed to Web dashboard (proto.tequ.fi) via Websocket
  - Logging to file can be enabled from UI
  - Data send to external MQTT broker can be enabled from UI
